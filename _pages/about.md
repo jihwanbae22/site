@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://engineering.purdue.edu/IE/academics/graduate'>Edwardson School of Industrial Engineering, Purdue University</a>. Grissom Hall, West Lafayette, IN 47907. bae129@purdue.edu
 
 profile:
   align: right
