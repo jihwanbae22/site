@@ -4,7 +4,7 @@ nav: true
 nav_order: 1
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: Ph.D. Student at <a href='https://engineering.purdue.edu/IE/academics/graduate'> Edwardson School of Industrial Engineering, Purdue University</a>. 
 
 profile:
