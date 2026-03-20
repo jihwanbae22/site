@@ -52,7 +52,8 @@
           {% assign seen_permalinks = ',' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
-              {% unless seen_permalinks contains ',' | append: p.permalink | append: ',' %}
+              {% assign candidate_permalink = ',' | append: p.permalink | append: ',' %}
+              {% unless seen_permalinks contains candidate_permalink %}
                 {% assign seen_permalinks = seen_permalinks | append: p.permalink | append: ',' %}
                 {% if p.dropdown %}
                   {% assign has_active_child = false %}
@@ -103,7 +104,7 @@
                     {%- endif %}
                     <a class="nav-link" href="{{ url | relative_url }}">
                       {{- p.title }}
-                      {% if page.url contains p.url %}
+                    {% if page.permalink | rstrip: '/' == p.permalink | rstrip: '/' %}
                         <span class="sr-only">(current)</span>
                       {% endif %}
                     </a>
